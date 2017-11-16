@@ -1,13 +1,16 @@
 $(document).ready(function(){
 
-  var reverseWord = [];
-
   $("form#form-group").submit(function(event){
      event.preventDefault();
      var userInput = $("input#input").val();
-     userInput.split("").reverse().join("");
-     reverseWord.push(userInput);
+     var backWord = userInput.split("").reverse().join("");
 
-     alert(reverseWord);
+    if (backWord === userInput) {
+      $(".result").text("This is a Palindrome.");
+      $("#result").show();
+    } else {
+      $(".result").text("This is not a Palindrome.");
+      $("#result").show();
+    }
   });
 });

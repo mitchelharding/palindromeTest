@@ -1,0 +1,17 @@
+* {
+  text-align: center;
+}
+button{
+  margin:10px
+}
+#result{
+  font-size:20px;
+  font-weight:bold;
+  margin: 10px;
+}
+#palindrome{
+  color: green;
+}
+#notpalindrome{
+  color: red;
+}
